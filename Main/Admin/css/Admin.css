@@ -1,126 +1,127 @@
+html{
+	background-color:#1A5276;
+	margin:0;
+	padding:0;
+}
 
-		html{
-			background-color:#1A5276;
-			margin:0;
-			padding:0;
-		}
+header{
+	background-color:#D6EAF8; 
+	font-size: 14px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
 
-		header{
-            background-color:#D6EAF8; 
-            font-size: 14px;
-            padding-top: 50px;
-            padding-bottom: 30px;
-        }
+#titulo{
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+	font-size: 35px;
+	color: #1A5276;
+	text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#dos{
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+aside{
+	width:200px;
+	float:left;
+	border-left:1px solid #ebebeb;
+	background-color: #F7F6F6;
+}
+aside nav, aside section{
+	padding:1px 30px 75% 30px;	
+}
+.navbar_aside a{
+	display:flex;
+	text-decoration: none;
+	font-size: large;
+	padding-left: 10px;
+	padding: 5px 10px;
+}
 
-		#titulo{
-			font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
-			font-size: 35px;
-			color: #1A5276;
-			text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
-			font-weight: bold;
-			letter-spacing: 2px;
-			text-align: center;
-		}
-		#dos{
-			padding-top: 10%;
-			padding-bottom: 10%;
-		}
-		aside{
-			width:200px;
-			float:left;
-			border-left:1px solid #ebebeb;
-			background-color: #F7F6F6;
-		}
-			aside nav, aside section{
-			padding:1px 30px 75% 30px;	
-		}
-		 .navbar_aside a{
-			display:flex;
-			text-decoration: none;
-			font-size: large;
-			padding-left: 10px;
-			padding: 5px 10px;
-			}
-		 .navbar_aside p{
-			font-size: larger;
-			font-weight: bolder;
-			padding: 15px 5px;
-			}
-		.navbar_aside{
-			background-color: rgb(52, 67, 82);
-			}
-		 .navbar_aside a{
-			color: white;
-			padding: 10px 10px;
-			transition: .5s linear;
-			}
-		 .navbar_aside a:hover{
-			color: black;
-			background-color: white;
-			}
-		 .navbar_aside p{
-			color: rgb(255, 255, 255);
-			font-size: 20px;
-			border-bottom: 2px solid white;
-			}
+.navbar_aside p{
+	font-size: larger;
+	font-weight: bolder;
+	padding: 15px 5px;
+}
 
-		body{
-			width:80%;
-			margin:30px auto;
-			padding:0;
-			background-color:#fff;
-			/* CSS3 BOX shadow (http://www.css3.info/preview/box-shadow/)*/
-			-moz-box-shadow: 0 0 5px #888;
-			-webkit-box-shadow: 0 0 5px#888;
-			box-shadow: 0 0 5px #888;
-		}
-		h1{
-			text-align: center;
-		}
+.navbar_aside{
+	background-color: rgb(52, 67, 82);
+	}
+	.navbar_aside a{
+	color: white;
+	padding: 10px 10px;
+	transition: .5s linear;
+	}
+	.navbar_aside a:hover{
+	color: black;
+	background-color: white;
+	}
+	.navbar_aside p{
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	border-bottom: 2px solid white;
+	}
+
+body{
+	width:80%;
+	margin:30px auto;
+	padding:0;
+	background-color:#fff;
+	/* CSS3 BOX shadow (http://www.css3.info/preview/box-shadow/)*/
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+h1{
+	text-align: center;
+}
 
 
-		#agregar, #buscar{
-			text-align: right;
-			padding-right: 30px;
-		}
+#agregar, #buscar{
+	text-align: right;
+	padding-right: 30px;
+}
 
-		section{
-			float:top;
-		}
+section{
+	float:top;
+}
 
-		form{
-			padding: 40px 20px 10px 220px;
-		}
-		fieldset {
-			padding-top: 15px;
-			background-color: #eeeeee;
-		  }
-		  
-		  legend {
-			background-color: gray;
-			color: white;
-			padding: 5px 10px;
-		  }
-		  
-		  input {
-			margin: 5px;
-		  }
-		
-		  table {
-			font-size: 15px;
-			margin:auto;
-			border: 1px solid #000;
-		 }
-		 td {
-			text-align: left;
-			vertical-align: top;
-			border: 1px solid #000;
-			border-collapse: collapse;
-			padding: 0.3em;
-			caption-side: bottom;
-		 }
-		 
-		button a{
-				color:black;	
-				text-decoration: none;
-		 }
+form{
+	padding: 40px 20px 10px 220px;
+}
+fieldset {
+	padding-top: 15px;
+	background-color: #eeeeee;
+	}
+	
+	legend {
+	background-color: gray;
+	color: white;
+	padding: 5px 10px;
+	}
+	
+	input {
+	margin: 5px;
+	}
+
+	table {
+	font-size: 15px;
+	margin:auto;
+	border: 1px solid #000;
+	}
+	td {
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid #000;
+	border-collapse: collapse;
+	padding: 0.3em;
+	caption-side: bottom;
+	}
+	
+button a{
+		color:black;	
+		text-decoration: none;
+	}
