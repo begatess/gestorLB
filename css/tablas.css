@@ -1,0 +1,139 @@
+.panel{
+    min-height: 420px;
+    width: 96.5%;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.table-Inventario{
+	border-spacing:1;
+	border-collapse:collapse;
+	background:#fff;
+	border-radius:10px;
+	overflow:hidden;
+	width:100%;
+	margin:0 auto;
+	position:relative
+}
+
+.table-Inventario td,.table-Inventario th{
+	padding-left:8px;
+}
+
+.table-Inventario thead tr{
+	height:60px;
+	background:#002E4B;
+}
+
+.table-Inventario tbody tr{
+	height:50px
+}
+
+.table-Inventario tbody tr:last-child{
+	border:0
+}
+
+.table-Inventario td,.table-Inventario th{
+	text-align:left
+}
+
+.table-Inventario td.l,.table-Inventario th.l{
+	text-align:right
+}
+
+.table-Inventario td.c,.table-Inventario th.c{
+	text-align:center
+}
+
+.table-Inventario td.r,.table-Inventario th.r{
+	text-align:center
+}
+
+.table-head th{
+	font-family:OpenSans-Regular;
+	font-size:18px;
+	color:#fff;
+	line-height:1.2;
+	font-weight:unset
+}
+
+tbody tr:nth-child(even){
+	background-color:#bcd4e3
+}
+
+tbody tr{
+	font-family:OpenSans-Regular;
+	font-size:15px;
+	color:gray;
+	line-height:1.2;
+	font-weight:unset
+}
+
+tbody tr:hover{
+	color:#555;
+	background-color:#bcd4e3;
+	cursor:pointer
+}
+
+.col-Boton{
+	width:10px;
+	text-align: center;
+}
+
+.btnborr{
+	position: relative;
+	width: 60px;
+	height: 40px;
+	border: white 3px solid;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: border 0.1s ease-in-out;
+	background: #bcd4e3;
+}
+
+.col-ID{
+	width:50px;
+	text-align: center;
+}
+
+.col-Nom{
+	width:150px
+}
+
+.col-Comp{
+	width:250px
+}
+
+.col-Est{
+	width:80px;
+}
+
+.col-Cant{
+	width:50px;
+	text-align:center;
+}
+
+.col-Matri{
+	width:80px;
+}
+
+.col-HPrestamo{
+	width:80px;
+	text-align:center;
+}
+
+.col-FPrestamo{
+	width:80px;
+	text-align:center;
+}
+
+.col-HEntrega{
+	width:80px;
+	text-align:center;
+}
+
+.col-FEntrega{
+	width:80px;
+	text-align:center;
+}

@@ -1,0 +1,154 @@
+aside{
+    width: 21%;
+    height: 610px;
+    background-color: #F7F6F6;
+}
+#uno{
+    position: absolute;
+    bottom: 100px;
+    left: 665px;
+}
+h1{text-align: center;
+color: white;}
+
+#dos{
+    position: absolute;
+    bottom: 400px;
+    left: 640px;
+    right: 50px;
+    max-width: 48%;
+    background: #002D4B;
+    border-radius: 5px;
+
+}
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    padding: 5px 8px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+  button i a{
+    color:white;	
+    text-decoration: none;
+}
+th{color: white;}
+td{color:black;}
+table{
+	border-spacing:1;
+	border-collapse:collapse;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden;
+	width:100%;
+	margin: auto;
+
+    font-family:OpenSans-Regular;
+	font-size: 12px;
+	line-height:2;
+	font-weight:unset;
+    text-align: center;
+}
+
+
+fieldset {
+    padding-top: 15px;
+    background-color: #eeeeee;
+}
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+input {
+    margin: 5px;
+}
+
+.barra { grid-area: barra; }
+
+.opciones, aside section{
+    width: 100%;
+    /* padding: 0px 35px 75% 30px; */
+}
+
+.navbar_aside a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 12px 17px;
+    font-size: 12px;
+    text-align: left;
+    transition: .5s linear;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.navbar_aside {
+    min-height: 610px;
+    background-color: #002D4B;
+}
+
+.navbar_aside a:hover{
+    color: white;
+    background-color: #5fa2db;
+}
+
+.navbar_aside p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 0px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    padding: 15px 20px;
+}
+
+#cerrarsesionAdmin{
+    padding-top: 223%;
+}
+#registro{color: white;}
+*{box-sizing:border-box;}
+
+form{
+	width:600px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#002D4B;
+    font-size: 15px;
+}
+
+form label{
+	width:150px;
+	font-weight:bold;
+}
+
+form input[type="text"],form input[type="password"],form input[type="number"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #165883;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#165883;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}

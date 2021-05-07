@@ -1,0 +1,81 @@
+.warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2%;
+}
+
+label{
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+    padding: 1em;
+}
+
+.tab{
+    cursor: pointer;
+    padding: 10px 40px;
+    margin: 0px 2px;
+    background: #002E4B;
+    display: inline-block;
+    color: #fff;
+    border-radius: 8px 8px 0px 0px
+}
+
+.tab:hover{
+    background-color:#5fa2db;
+}
+
+.panels{
+    background: #fffffff6;
+    min-height: 420px;
+    width: 96.5%;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/*
+.panel{
+    display:none;
+    
+    background: blue;
+    min-height: 300px;
+    width: 80%;
+}*/
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+    font-size:1.5em;
+    font-weight:bold
+}
+.radio{
+    display:none;
+}
+#one:checked ~ .panels #existencia,
+#two:checked ~ .panels #prestado,
+#three:checked ~ .panels #entregados{
+    display:block
+}
+#one:checked ~ .tabs #existencia,
+#two:checked ~ .tabs #prestado,
+#three:checked ~ .tabs #entregados{
+    background:#fffffff6;
+    color:#000;
+}
+
+  

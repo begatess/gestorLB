@@ -1,0 +1,58 @@
+aside{
+    width: 25%;
+    height: 610px;
+    background-color: #F7F6F6;
+}
+
+#area-Admin{
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1.8fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "barra barra areaopciones areaopciones"
+      "barra barra areaopciones areaopciones"
+      "barra barra areaopciones areaopciones";
+}
+.barra { grid-area: barra; }
+.areaopciones { grid-area: areaopciones; }
+
+.opciones, aside section{
+    width: 100%;
+    /* padding: 0px 35px 75% 30px; */
+}
+
+.navbar_aside a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 12px 17px;
+    font-size: 12px;
+    text-align: left;
+    transition: .5s linear;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.navbar_aside {
+    min-height: 610px;
+    background-color: #002D4B;
+}
+
+.navbar_aside a:hover{
+    color: white;
+    background-color: #5fa2db;
+}
+
+.navbar_aside p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 0px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    padding: 15px 20px;
+}
+
+#cerrarsesionAdmin{
+    padding-top: 224%;
+}

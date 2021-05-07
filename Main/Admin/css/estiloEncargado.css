@@ -1,0 +1,349 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+  }
+  
+body {
+    color: #707172;
+    background-color: #666;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height:100%;
+    width:100%;
+    margin: 0px;
+}
+
+.main{
+    background: url(file:///C:/xampp/htdocs/gestorLB/img/salones.jpg) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+.tm-section {
+    min-height: 100vh;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    height: auto;
+
+}
+          
+.tm-fondo {
+    margin: 0px 0% 0% 7%;
+    display: block;
+    min-height: 650px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);  
+}
+
+.cont-text{
+    display: inline-block;
+    width: 49%;
+}
+
+.banner{
+    margin: 2% 0% 0% 0%;
+    display: block;
+    min-height: auto;
+    width: 96%;
+    background-color: #002E4B;
+}
+
+.banner-title{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 1em;
+    margin: 0px;
+}
+.banner-txt{
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+    padding: 1em;
+}
+
+#all-cont{
+    display: block;
+}
+
+#recepcion{
+    display: none;
+}
+
+#confirmaRecepcion{
+    display: none;
+}
+
+#inventario {
+    display: none;
+}
+
+#prestamo {
+    display: none;
+}
+
+.tabla {
+    display: table-row;
+}
+
+.area-prestamo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "formulario formulario formulario botones"
+      "formulario formulario formulario botones"
+      "formulario formulario formulario botones";
+}
+  
+.formulario { 
+    grid-area: formulario; 
+}
+
+.botones {
+    grid-area: botones; 
+}
+
+.form-group{
+    width: 100%;
+    margin: 0;
+}
+
+.prestamo-txt{
+    font-size: 15px;
+    padding: 1em 2em;
+    margin: 0em 4em;
+    font-weight: 600;
+    
+}
+
+.img-btn{
+    display: inline-block;
+    padding: 1em;
+    margin: 15px;
+}
+
+.botons{
+
+}
+
+.form-btn {
+    display: block;
+}
+
+.btn{
+    color: #d3cece;
+    border-bottom: 1px solid #ffffff;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.btn-stylo{
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+    padding: 1rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.btn:hover{
+    background-color: #5fa2db;
+}
+
+.btn:after {
+    width: 100%;
+    height: 20%;
+    top: 0;
+    left: 0;
+    background: #cdcecf;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.form-control {
+    display: block;
+    width: 90%;
+    height: calc(1em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 15px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin: 22px 43px 22px;
+} 
+
+.idPrestamo{
+    width: 60%;
+    display: inline-block;
+}
+
+.iconos-menu{
+    margin: 18px;
+}
+
+/* CSS area recepcion*/
+.let-recepcion{
+    font-size: 15px;
+    margin: 0em 2em;
+    font-weight: 600;
+    width: 80%;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.recepcion-txt{
+    color: white;
+    font-size: 14px;
+    padding: 1em 0em;
+    margin: 1em 5em 0em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+.tabla-recepcion{
+    color: white;
+    font-size: 12px;
+    padding: 1em 0em;
+    margin: 0em 0em 0em 5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+#comentarioRecepcion{
+    flex-direction:unset !important;
+    resize: unset!important;
+}
+
+.area-recepcion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.3fr 1.7fr;
+    grid-template-rows: 0.7fr 1.3fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "busca busca busca busca"
+      "imprime imprime imprime coment"
+      "imprime imprime imprime coment";
+}
+.busca { grid-area: busca; }
+.imprime { grid-area: imprime; }
+.coment { grid-area: coment; }
+  
+.encabezados {
+    color: white;
+    width: 24%;
+    font-weight: 600;
+    border-width: 2px;
+    border-color: #002D4B;
+    border-style: solid;
+    padding: 5px;
+    background-color: #002D4B;
+}
+
+.imprime-area{
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: #FFFFFF;
+    color: #000000; 
+    width: 69%;
+}
+
+.container-1{
+    width: auto;
+    margin: 3.5% 0%;
+}
+
+.container-1 input#search{
+    width: 600px;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    font-size: 10pt;
+    color: #666666;
+    padding-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin: 0px 0px 0px;
+    border-radius: 5px;
+}
+
+.box{
+    display: inline-block;
+}
+
+.buscador{
+    display: block;
+    width: 100%;
+    height: calc(1em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 15px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin: 22px 41px 22px;
+}
+
+#comentarioRecepcion{
+    margin: 1em 0px 5em;
+    width: 75%;
+    padding: 10px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
