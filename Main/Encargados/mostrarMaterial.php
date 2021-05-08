@@ -40,14 +40,22 @@ $consulta="SELECT * FROM materialoherramienta";
             echo("</td>");
         }
         echo("<td class='col-Boton'>");
-        echo("<button class='btnborr' id='eliminar' data-id='$id'>");
-        echo("Borrar");
-        echo("</button>");
+        //echo("<button class='btnborr' id='eliminar' data-id='$id'>");
+        //echo("Borrar");
+        echo("<img id='eliminar' data-id='$id' src='../../img/trash.png'>");
+        //echo("</button>");
         echo("</td>");
         echo("</tr>");
-        
+
         $j++;
         $fila=mysqli_fetch_row($resultados);
     }while($fila!=NULL);
 
+    echo("<tr id='newfila' style='display:none;'><td class='col-ID'></td>");
+    echo("<td class='col-Nom' id='addNom' contenteditable> </td>");
+    echo("<td class='col-Comp' id='addComp' contenteditable> </td>");
+    echo("<td class='col-Est' id='addEst' contenteditable> </td>");
+    echo("<td class='col-Cant' id='addCant' contenteditable> </td>");
+    echo("<td class='col-Boton'><img id='agregar' src='../../img/plus.png'></img></td></tr>");     
+        
 ?>

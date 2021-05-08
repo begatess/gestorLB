@@ -30,12 +30,12 @@
 	height:50px
 }
 
-.table-Inventario tbody tr:last-child{
-	border:0
+.table-Inventario tbody tr{
+	height:50px
 }
 
-.table-Inventario td,.table-Inventario th{
-	text-align:left
+.table-Inventario tbody tr:last-child{
+	border:0
 }
 
 .table-Inventario td.l,.table-Inventario th.l{
@@ -98,15 +98,18 @@ tbody tr:hover{
 }
 
 .col-Nom{
-	width:150px
+	width:150px;
+	text-align: left;
 }
 
 .col-Comp{
-	width:250px
+	width:250px;
+	text-align: left;
 }
 
 .col-Est{
 	width:80px;
+	text-align: left;
 }
 
 .col-Cant{
@@ -116,6 +119,7 @@ tbody tr:hover{
 
 .col-Matri{
 	width:80px;
+	text-align: left;
 }
 
 .col-HPrestamo{

@@ -15,7 +15,7 @@
     $fila=mysqli_fetch_row($resultados);
     do{
         echo("<tr>");
-        for($i=0;$i<9;$i++){
+        for($i=0;$i<8;$i++){
             switch ($i) {
                 case 0:
                     echo("<td class='col-ID'>");
@@ -24,24 +24,21 @@
                     echo("<td class='col-ID'>");
                     break;
                 case 2:
-                    echo("<td class='col-Nom'>");
+                    echo("<td class='col-ID'>");
                     break;
                 case 3:
-                    echo("<td class='col-Matri'>");
+                    echo("<td class='col-Nom'>");
                     break;
                 case 4:
-                    echo("<td class='col-Comp'>");
+                    echo("<td class='col-Matri'>");
                     break;
                 case 5:
-                    echo("<td class='col-HPrestamo'>");
+                    echo("<td class='col-Comp'>");
                     break;
                 case 6:
                     echo("<td class='col-FPrestamo'>");
                     break;
                 case 7:
-                    echo("<td class='col-HEntrega'>");
-                    break;
-                case 8:
                     echo("<td class='col-FEntrega'>");
                     break;
             }

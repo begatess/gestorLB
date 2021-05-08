@@ -28,7 +28,7 @@ body {
 }
 
 .main{
-    background-image: url(../../../img/prueba.jpg) no-repeat fixed center;
+    background: url(https://i.ibb.co/0GXXj37/fondo.jpg) no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -34,7 +34,7 @@
                 </a>
                 
             </li>
-            <li class="has-subnav">
+            <li class="has-subnav" id="menuRecepcion">
                 <a href="javascript:irReprestamo()">
                    <i class="fa fa-list fa-2x"><img class="iconos-menu" src="../../img/paquete.png"></i>
                     <span class="nav-text">Recepcion de prestamo</span>
@@ -108,7 +108,7 @@
                                                 <th class="col-Comp">Complementos</th>
                                                 <th class="col-Est">Estado</th>
                                                 <th class="col-Cant">Cantidad</th>
-                                                <th class="col-ID"></th>
+                                                <th class="col-ID"><img id="addfila" src="../../img/plus.png"></img></th>
                                             </tr>
                                         </thead>
                                         <tbody id="invExistencia">
@@ -119,19 +119,18 @@
                                 
                                 <div class="panel" id="two-panel">
                                     <!--Aqui va la tabla de material que se encuentra prestado-->
-                                    <table>
+                                    <table class="table-Inventario">
                                         <thead>
                                             <tr class="table-head">
+                                                <th class="col-ID">ID Prestamo</th>
+                                                <th class="col-ID">ID Encargado</th>
                                                 <th class="col-ID">ID Material</th>
-                                                <th class="col-ID">ID Prestador</th>
                                                 <th class="col-Nom">Nombre Alumno</th>
                                                 <th class="col-Matri">Matricula</th>
                                                 <th class="col-Contac">#Contacto</th>
                                                 <th class="col-Comp">Comentarios</th>
-                                                <th class="col-HPrestamo">Hora Prestamo</th>
                                                 <th class="col-FPrestamo">Fecha Prestamo</th>
-                                                <th class="col-HEntrega">Hora Entrega</th>
-                                                <th class="col-FEntrega">Fecha Entrega</th>
+                                                <th class="col-HPrestamo">Hora Prestamo</th>
                                             </tr>
                                         </thead>
                                         <tbody id="invPrestado">
@@ -142,17 +141,16 @@
 
                                 <div class="panel" id="three-panel">
                                     <!--Aqui va la tabla de material que se encuentra prestado-->
-                                    <table>
+                                    <table class="table-Inventario">
                                         <thead>
                                             <tr class="table-head">
+                                                <th class="col-ID">ID Entrega</th>
                                                 <th class="col-ID">ID Material</th>
                                                 <th class="col-ID">ID Encargado</th>
                                                 <th class="col-Nom">Nombre Alumno</th>
                                                 <th class="col-Matri">Matricula</th>
                                                 <th class="col-Comp">Ultimo Comentario</th>
-                                                <th class="col-HPrestamo">Hora Prestamo</th>
                                                 <th class="col-FPrestamo">Fecha Prestamo</th>
-                                                <th class="col-HEntrega">Hora Entrega</th>
                                                 <th class="col-FEntrega">Fecha Entrega</th>
                                             </tr>
                                         </thead>
@@ -207,7 +205,7 @@
                                       </tr>
                                       <tr>
                                         <td class="encabezados">Comentario guardado:</td>
-                                        <td id="comentarioPrestamo" class="imprime-area"> </td>
+                                        <td id="comentario-Prestamo" class="imprime-area"> </td>
                                       </tr>
                                     </tbody>
                                 </table> 
@@ -215,8 +213,8 @@
                             <div class="coment" class="contenedores">
                                 <p class="recepcion-txt">Estado actual del material</p>
                                 <textarea id="comentarioRecepcion" class="" name="texto" cols="3" rows="10" placeholder="Observaciones"></textarea>
-                                <button type="submit" class="btn btn-stylo" onclick="">Imprimir comprobante</button> 
-                                <button type="submit" class="btn btn-stylo" onclick="">Cancelar</button>
+                                <button type="submit" class="btn btn-stylo" id="entregar">Entregar</button> 
+                                <button type="submit" class="btn btn-stylo" id="cancelarEntrega">Cancelar</button>
                             </div>
                         </div>
                     </div>
@@ -248,6 +246,11 @@
         $(document).ready(function(){
             $('#three').click(function(){
                 $("#invEntregado").load("mostrarEntregas.php");
+            });
+        });
+        $(document).ready(function(){
+            $('#menuRecepcion').click(function(){
+                limpiarRecepcion();
             });
         });
     </script>
