@@ -43,7 +43,7 @@
             <li class="logout">
                 <a href="../salir.php">
                       <i class="fa fa-power-off fa-2x"><img class="iconos-menu" src="../../img/logout.png"></i>
-                     <span class="nav-text">Cerrar Sesión</span>
+                     <span class="nav-text"><a href="../salir.php">Cerrar Sesión</a></span>
                  </a>
              </li> 
     </nav>
@@ -65,20 +65,22 @@
                         <div class="area-prestamo">
                             <div class="formulario">
                                 <div class="form-group">
+                                <form name="formularioPrestamo" method="post" action="guardaPrestamo.php">
                                     <p class="prestamo-txt banner-txt"> Datos del alumno</p>
                                     <input type="text" id="nameP" name="nameP" class="form-control" placeholder="Nombre del alumno" required="" />
                                     <input type="text" id="matriculaP" name="matriculaP" class="form-control" placeholder="Matricula del alumno" required="" />
-                                    <input type="text" id="nameP" name="nameP" class="form-control" placeholder="Numero de contacto" required="" />
+                                    <input type="text" id="numeroP" name="numeroP" class="form-control" placeholder="Numero de contacto" required="" />
                                     <p class="prestamo-txt banner-txt"> Material</p>
                                     <input type="text" id="material" name="material" class="form-control" placeholder="ID de material" required="" />
-                                    <textarea id="comentarioPrestamo" class="form-control" name="texto" cols="3" rows="10" placeholder="Observaciones"></textarea>
+                                    <textarea id="comentarioPrestamo" class="form-control" name="comentarioPrestamo" cols="3" rows="10" placeholder="Observaciones"></textarea>
+                                    <button id=guardaP type="submit" class="btn btn-stylo" onclick="guarda()">Guardar</button> 
+                               </form>
                                 </div>
                             </div>
                             <div class="botons">
                                     <div class="botones">
-                                    <button type="submit" class="btn btn-stylo" onclick="guarda()">Guardar</button> 
-                                    <button type="submit" class="btn btn-stylo" onclick="">Limpiar</button> 
-                                    <button type="submit" class="btn btn-stylo" onclick="">Cancelar</button>
+                                    
+                                    <button type="submit" class="btn btn-stylo" action="prueba.php">Limpiar</button> 
                                     <button type="submit" class="btn btn-stylo" onclick="">Imprimir comprobante</button>
                                 </div>
                             </div>
