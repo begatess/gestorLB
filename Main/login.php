@@ -2,6 +2,7 @@
   require 'conexion.php';
   sleep(2);
   session_start();
+
   $usuarios = $mysqli->query("SELECT nombre,Tipo_usuario FROM encargados WHERE userName = '".$_POST['usuariolg']."' AND userPass = '".$_POST['passlg']."'");
 
   if($usuarios->num_rows == 1):
