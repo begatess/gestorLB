@@ -143,8 +143,8 @@ body {
     margin: 15px;
 }
 
-.botons{
-
+#confirmacion{
+    display: none;
 }
 
 .form-btn {
