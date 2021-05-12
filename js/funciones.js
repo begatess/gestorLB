@@ -98,7 +98,17 @@ function bloquearPaneles(){
   }
 }
 
-function regresarLogin(){
-
+function aceptar(){
+  var confirmacion = document.getElementById("confirmacion");
+  confirmacion.style.display = "block";
+  var boton = document.getElementById("guardaP");
+  boton.innerText = "Imprimir comprobante"
+  boton.addEventListener("click",impresion);
 }
-
+function cambia(){
+  document.getElementById("img-Confirmacion").src = "../../img/garrapata.png";
+}
+function impresion(){
+  document.getElementById("guardaP").type = "submit"
+  
+}
