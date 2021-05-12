@@ -115,7 +115,6 @@
                 $result=mysqli_query($mysqli,$sql);
 
                 while($mostrar=mysqli_fetch_array($result)){
-                
                     echo "<tr>";
                       echo "<td>" . $mostrar['idEncargado'] . "</td>";
                       echo "<td>" . $mostrar['nombre']  . "</td>";
@@ -126,8 +125,7 @@
                       echo "<td>" . $mostrar['Tipo_usuario']  . "</td>";
                       echo "<td><button class='btn'><i class='fa fa-trash'><a href='borrar.php?id=".$mostrar['idEncargado']."'> Eliminar</a></i></button></td>";
                       echo "<td><button class='btn'><i class='fa fa-pencil-square-o'><a href='editar.php?id=".$mostrar['idEncargado']."'> Editar</a></i></button></td>";
-                    echo "</tr>";
-                 
+                    echo "</tr>";                
                 }
                   $mysqli->close();
                 ?>
