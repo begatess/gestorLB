@@ -5,9 +5,8 @@
     $numero = $_POST['numeroP'];
     $material = $_POST['material'];
     $coment = $_POST['comentarioPrestamo'];
-    
-    //buscel id en la tabla de existencias 
-    $IdEncargado = '1';
+   
+    //busca el id en la tabla de existencias 
     $fecha = date('Y-m-d');
     $hora = date('H:i:s',time());
     $sql = "INSERT INTO mprestado (idPres,idEncargado,idMaterial,alumno,matricula,telefono,coment,fechaPrestamo,horaPrestamo) VALUES (NULL,$IdEncargado,'$material','$nombre','$matricula','$numero','$coment','$fecha','$hora')";
@@ -18,7 +17,7 @@
         echo'<script type="text/javascript"> alert("Error Inesperado...");
              window.location.href="index.php"; </script>';
     }else{
-        echo'<script type="text/javascript"> alert("Datos Guardados Correctamente");
+        echo'<script type="text/javascript"> alert("Datos guardados");
              window.location.href="index.php"; </script>';
     }
 
