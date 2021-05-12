@@ -8,7 +8,7 @@
     $pass = $_POST['pass'];
     $tipoUsuario = $_POST['tipoUsuario'];
 
-    $sql = "INSERT INTO usuarios (idEncargado,nombre,matricula,telefono,userName,userPass,Tipo_usuario) VALUES (NULL,'$nombre','$matricula','$numero','$usuario','$pass','$tipoUsuario')";
+    $sql = "INSERT INTO encargados (idEncargado,nombre,matricula,telefono,userName,userPass,Tipo_usuario) VALUES (NULL,'$nombre','$matricula','$numero','$usuario','$pass','$tipoUsuario')";
 
     $ejecutar=mysqli_query($mysqli,$sql);
     //verificamos la ejecucion
